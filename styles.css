@@ -1,0 +1,121 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+#header h1{
+    font-size: 100px;
+}
+
+#etchNSketch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gridSpace {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    justify-content: center;
+    align-items: center;
+} 
+  
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+}
+
+#gameControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameButton{
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+.gameButton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin: 0 100px;
+}
+#selectColor{
+    width: 250px;
+    height: 200px;
+}
+#colorpicker{
+    width: 100%;
+    height: 100%;
+}
+
+#clearGrid{
+    display: flex;
+    width: 50%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+#gridButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clearGrid .slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+
+.slider p{
+    margin-left: 100px;
+    font-size: 55px;
+}
+
+#clearGrid input{
+    width: 100%;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 50px;
+    background: #cfcfcf;
+    outline: 1px solid black;
+    border-radius: 50px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+#clearGrid input:hover {
+    opacity: 1;
+}
+#clearGrid input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    cursor: pointer;
+}
+#clearGrid input::-moz-range-thumb {
+    width: 100px;
+    height: 100px;
+    background: #000000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#etchNSketch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
